@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Scaling and adjusting
+title: Scaling And Adjusting
 nav_order: 2
 ---
 
-## General info
+## Scaling And Adjusting
 
 Most of the adjustments come from Material parameters and [Custom Vertex Streams](https://docs.unity3d.com/Manual/PartSysVertexStreams.html). Such particle animations like dissolve, emission power, and appear progress are driven with Vertex Streams. Some effects using control particles to spawn other particles as SubEmitters. Control Particles are invisible, they have their "Renderer" module turned off completely. But you can control the emitter component as you like. For example, you can increase emitter frequency, to make more rockets/missiles to spawn during the effect lifetime.
 
