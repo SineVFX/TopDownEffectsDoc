@@ -10,29 +10,29 @@ First of all, you need to unpack the right packages for your specific setup of U
 
 ### Important notes
 
-1. (URP) Make sure, you enable HDR, Depth, and Opaque textures in URP Asset settings.
+* **(URP)** Make sure, you enable HDR, Depth, and Opaque textures in URP Asset settings.
 
 ![s19](/assets/images/Screenshot_19.png)
 
-1. (Standard) Turn on "HDR" on your Camera, Shaders requires it.
+* **(Standard)** Turn on "HDR" on your Camera, Shaders requires it.
 
 ![s18](/assets/images/Screenshot_18.png)
 
-1. (All) This VFX Asset looks much better in "Linear" Color Space, but if you using "Gamma" Color Space, you need to slightly decrease the Final Power (Emission Power) material parameter of each effect. You can check it in the "Edit > Project Settings > Player" TAB.
-1. (All) Image Effects are necessary in order to make a great-looking game, as well as our asset. Be sure to use "ACES Tone Mapping" and "Bloom".
-1. (All) Your camera must render Depth texture in order for some effects to appear correctly.
+* **(All)** This VFX Asset looks much better in "Linear" Color Space, but if you using "Gamma" Color Space, you need to slightly decrease the Final Power (Emission Power) material parameter of each effect. You can check it in the "Edit > Project Settings > Player" TAB.
+* **(All)** Image Effects are necessary in order to make a great-looking game, as well as our asset. Be sure to use "ACES Tone Mapping" and "Bloom".
+* **(All)** Your camera must render Depth texture in order for some effects to appear correctly.
 
 
 
 ### How to use
 
-1. First of all, check two scenes "DemoScene_MainEffects", and "DemoScene_SeparateEffects" in the Scenes folder. The First one contains complete effects, you can spawn it with right-click. The second one contains additional effects, some environment design meshes, and example particle systems.
-1. Drag and Drop prefabs from the "CompleteEffects" folder into your scene and they will automatically play on awake. You can just instantiate these prefabs in your scripts, or create an object pool system, enabling and disabling an array of effects.
-1. Most of the effects are driven by Particle Systems utilizing ([Custom Vertex Streams](https://docs.unity3d.com/Manual/PartSysVertexStreams.html)). You can freely scale the whole effect, it will preserve the proportions. Only one single parameter needed to be adjusted, it is "Soft Particles Distance" in materials with a "DissolveParticleAdvances" shader.
+* First of all, check two scenes "DemoScene_MainEffects", and "DemoScene_SeparateEffects" in the Scenes folder. The First one contains complete effects, you can spawn it with right-click. The second one contains additional effects, some environment design meshes, and example particle systems.
+* Drag and Drop prefabs from the "CompleteEffects" folder into your scene and they will automatically play on awake. You can just instantiate these prefabs in your scripts, or create an object pool system, enabling and disabling an array of effects.
+* Most of the effects are driven by Particle Systems utilizing ([Custom Vertex Streams](https://docs.unity3d.com/Manual/PartSysVertexStreams.html)). You can freely scale the whole effect, it will preserve the proportions. Only one single parameter needed to be adjusted, it is "Soft Particles Distance" in materials with a "DissolveParticleAdvances" shader.
 
 ![s20](/assets/images/Screenshot_20.png)
 
-1. Some prefabs are driven by a standard animation system in Unity, you can freely customize these animations.
+* Some prefabs are driven by a standard animation system in Unity, you can freely customize these animations.
 
 
 
