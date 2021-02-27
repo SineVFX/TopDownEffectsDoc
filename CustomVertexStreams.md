@@ -70,3 +70,7 @@ For more information, you can check the official Unity Documentation: [https://d
 ### Props:
 
 * **Custom1.Z / UV1.X** - Dissolve/Appear Effect progress control. Used to control the dissolve effect of the mesh when it appears or disappears.
+
+
+
+### Support email: sinevfx@gmail.com
