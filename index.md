@@ -4,13 +4,19 @@ title: Quick Start
 nav_order: 1
 ---
 
+## Quick start:
+
+First of all, you need to unpack the right packages for your specific setup of Unity. This Asset contains three packages, for **Standard**, **HDRP**, and **URP** pipelines. Start with **Step_1_CoreResources** package, it will add all core resources (textures, scripts, and animations) needed for this Asset. After that, pick the right SRP package and unpack it too. It will add all other components like prefabs of complete effects, scenes, materials, and shaders. If you using Standard pipeline and already have PostProcessing Stack V2 in your project, you can uncheck it when unpacking the **Standard** package.
+
 ### Important notes:
 
-1. If you using URP make sure, you enable HDR, Depth and Opaque textures in URP Asset settings
-1. Turn on "HDR" on your Camera, Shaders requires it
-1. This VFX Asset looks much better in "Linear" Color Space, but if you using "Gamma" Color Space, you need to slightly decrease the Final Power (Emission Power) material parameter of each effect
-1. Image Effects are necessary in order to make a great looking game, as well as our asset. Be sure to use "ACES Tone Mapping" and "Bloom"
-1. Your camera must render Depth texture in order for some effects to appear correctly
+1. (URP) Make sure, you enable HDR, Depth and Opaque textures in URP Asset settings
+![s19](/assets/images/Screenshot_19.png)
+1. (Standard) Turn on "HDR" on your Camera, Shaders requires it
+![s18](/assets/images/Screenshot_18.png)
+1. (All) This VFX Asset looks much better in "Linear" Color Space, but if you using "Gamma" Color Space, you need to slightly decrease the Final Power (Emission Power) material parameter of each effect. You can check it in the "Edit > Project Settings > Player" TAB
+1. (All) Image Effects are necessary in order to make a great looking game, as well as our asset. Be sure to use "ACES Tone Mapping" and "Bloom"
+1. (All) Your camera must render Depth texture in order for some effects to appear correctly
 
 
 
@@ -23,7 +29,7 @@ nav_order: 1
 
 
 
-### BASIC ADJUSTMENTS AND CUSTOMIZATION:
+### Basic adjustments and customization:
 
 1. You can scale, rotate and transform the prefab like you normally do.
 1. When you scale the effect, you might also need to adjust the noise scale inside Material settings.
