@@ -4,40 +4,34 @@ title: Quick Start
 nav_order: 1
 ---
 
-## Quick Start
+### Important notes:
 
-Testtt. You can use the [editor on GitHub](https://github.com/SineVFX/test-doc12/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+1. If you using URP make sure, you enable HDR, Depth and Opaque textures in URP Asset settings
+1. Turn on "HDR" on your Camera, Shaders requires it
+1. This VFX Asset looks much better in "Linear" Color Space, but if you using "Gamma" Color Space, you need to slightly decrease the Final Power (Emission Power) material parameter of each effect
+1. Image Effects are necessary in order to make a great looking game, as well as our asset. Be sure to use "ACES Tone Mapping" and "Bloom"
+1. Your camera must render Depth texture in order for some effects to appear correctly
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### How to use:
 
-```markdown
-Syntax highlighted code block
+1. First of all, check for Demo Scene in the Scenes folder. Also, there is a Prefabs folder with complete effects.
+1. Drag and Drop prefabs from the "Prefabs" folder into your scene.
+1. All animated prefabs are driven by standard animation system in Unity, you can freely customize these animations
+1. For GoldMeteorites effects, you also need to assign the collision plane inside Particle System settings.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+### BASIC ADJUSTMENTS AND CUSTOMIZATION:
 
-**Bold** and _Italic_ and `Code` text
+1. You can scale, rotate and transform the prefab like you normally do.
+1. When you scale the effect, you might also need to adjust the noise scale inside Material settings.
+1. Most of the adjustments come from Material parameters.
+1. Materials have a lot of settings, just play with them and create your own unique look. Be aware, that in a play mode, some materials will be converted into instances because their values are changing by the Animator component. So if you change material settings in a play mode, the original material won't be affected. This is a great way to just test all the settings.
+1. Most of the parameters are described in a "02.MaterialParameters.txt" file.
+1. Inside Portal prefabs, there are some disabled effects, this was made for easier customization. You can freely enable or disable them in order to create a unique look.
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SineVFX/test-doc12/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Support email: sinevfx@gmail.com
