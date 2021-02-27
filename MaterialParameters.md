@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Custom Vertex Streams
+title: Material Parameters
 nav_order: 4
 ---
 
