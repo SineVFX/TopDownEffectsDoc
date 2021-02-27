@@ -23,14 +23,15 @@ Materials have a lot of settings, just play with them and create your own unique
 
 ![s21](/assets/images/Screenshot_21.png)
 
+1. (Timing and Duration) These parameters can be adjusted manually. Select particle system and check parameters like "Start Delay", delay in "Emission" module, Sub Emitters parameters, and animation (when effect using animation component, like HammerStrike or HoloShield).
 1. (Noise) Effects have many Noise textures, try to change their scroll speed ans scale parameters. There are plenty of additional noise textures included in this Asset.
 1. (Texture Animation) Some effects using flopbooks, you can control the animation speed in the material settings. You also can control the animation manually via vertex stream, enable "MV Particle Frame Control Enabled" parameter to do so.
+1. (Control Particles) These particles used only to spawn other particle via SubEmitters. For example, every missile spawned like a invisible control particle, and this particle spawn other particles/parts of the missile, like fire trails, fire and the mesh itself. So, by adjusting the Emission frequency of control particle, you can easily increate the missile number.
 
 ### Advanced Adjustments
 
-1. (Vertex Stream)
-1. (Vertex Stream)
-1. (Vertex Stream)
+1. (Vertex Stream) You can adjust any vertex stream to make particles disappear faster or slower, being more bright at the start, or being more disroted. Check the "Custom Vertex Streams" documentation page fore more information.
+1. (Shader Editing) Shaders for Standard pipeline made with Amplify Shader Editor. And shader for HDRP/URP are made with native Shader Graph. You can freely edit and add parameters to shader graphs.
 
 
 
