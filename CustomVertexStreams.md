@@ -4,7 +4,7 @@ title: Custom Vertex Streams
 nav_order: 2
 ---
 
-## Custom Vertex Streams111
+## Custom Vertex Streams
 
 Many Particle Effects parameters are controlled via Custom Vertex Streams. Such parameters like Emission Power, Dissolve Progress, Appear and Disappear, Random Offset for Noise Textures, and etc. Check the name of a shader used in the Particle System, find it on this page, and check what each Custom Vertex Stream does. Try to modify, for example, the Dissolve Progress parameter for "DissolveParticleAdvanced" shader and make particles disappear quicker or slower.
 
