@@ -6,7 +6,7 @@ nav_order: 2
 
 ## Scaling And Adjusting
 
-Most of the adjustments come from Material parameters and [Custom Vertex Streams](https://docs.unity3d.com/Manual/PartSysVertexStreams.html). Such particle animations like dissolve, emission power, and appear progress are driven with Vertex Streams. Some effects using control particles to spawn other particles as SubEmitters. Control Particles are invisible, they have their "Renderer" module turned off completely. But you can control the emitter component as you like. For example, you can increase emitter frequency, to make more rockets/missiles to spawn during the effect lifetime.
+Most of the adjustments come from Material parameters and [Custom Vertex Streams](https://docs.unity3d.com/Manual/PartSysVertexStreams.html). Such particle animations like dissolve, emission power, and appear progress are driven with Vertex Streams. Some effects using control particles to spawn other particles as SubEmitters. Control Particles are invisible, they have their "Renderer" module turned off completely. But you can control the emitter component as you like. For example, you can increase emitter frequency, to make more rockets/missiles spawn during the effect lifetime.
 
 Materials have a lot of settings, just play with them and create your own unique look. Be aware, that in a play mode, some materials will be converted into instances because their values are changing by the Animator component. So if you change material settings in a play mode, the original material won't be affected. This is a great way to just test all the settings. Most of the parameters are described in a "02.MaterialParameters.txt" file.
 
