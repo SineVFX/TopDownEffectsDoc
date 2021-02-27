@@ -30,15 +30,4 @@ First of all, you need to unpack the right packages for your specific setup of U
 
 
 
-### Basic adjustments and customization
-
-1. You can scale, rotate and transform the prefab like you normally do.
-1. When you scale the effect, you might also need to adjust the noise scale inside Material settings.
-1. Most of the adjustments come from Material parameters.
-1. Materials have a lot of settings, just play with them and create your own unique look. Be aware, that in a play mode, some materials will be converted into instances because their values are changing by the Animator component. So if you change material settings in a play mode, the original material won't be affected. This is a great way to just test all the settings.
-1. Most of the parameters are described in a "02.MaterialParameters.txt" file.
-1. Inside Portal prefabs, there are some disabled effects, this was made for easier customization. You can freely enable or disable them in order to create a unique look.
-
-
-
 ### Support email: sinevfx@gmail.com
