@@ -19,19 +19,19 @@ Materials have a lot of settings, just play with them and create your own unique
 
 ### Basic Adjustments
 
-1. (Color) Color is set in the material settings, but it is affected by particle color too. You can use a single color or a ramp texture. When using ramp gradient texture to color your particles, check the "Ramp Ignore Vertex(Particle) Color" parameter if you want to multiply the result by particle color. There is a "RampGeneratorTDE" script, you can attach it to the effects and generate ramp in runtime, or you can bake it as a texture (keep all ramp textures in Clamp mode).
+1. **(Color)** Color is set in the material settings, but it is affected by particle color too. You can use a single color or a ramp texture. When using ramp gradient texture to color your particles, check the "Ramp Ignore Vertex(Particle) Color" parameter if you want to multiply the result by particle color. There is a "RampGeneratorTDE" script, you can attach it to the effects and generate ramp in runtime, or you can bake it as a texture (keep all ramp textures in Clamp mode).
 
 ![s21](/assets/images/Screenshot_21.png)
 
-1. (Timing and Duration) These parameters can be adjusted manually. Select particle system and check parameters like "Start Delay", delay in "Emission" module, Sub Emitters parameters, and animation (when effect using animation component, like HammerStrike or HoloShield).
-1. (Noise) Effects have many Noise textures, try to change their scroll speed and scale parameters. There are plenty of additional noise textures included in this Asset.
-1. (Texture Animation) Some effects using flipbooks, you can control the animation speed in the material settings. You also can control the animation manually via vertex stream, enable "MV Particle Frame Control Enabled" parameter to do so.
-1. (Control Particles) These particles used only to spawn other particles via SubEmitters. For example, every missile spawned like an invisible control particle, and this particle spawns other particles/parts of the missile, like fire trails, fire, and the mesh itself. So, by adjusting the Emission frequency of the control particle, you can easily increase the missile number.
+1. **(Timing and Duration)** These parameters can be adjusted manually. Select particle system and check parameters like "Start Delay", delay in "Emission" module, Sub Emitters parameters, and animation (when effect using animation component, like HammerStrike or HoloShield).
+1. **(Noise)** Effects have many Noise textures, try to change their scroll speed and scale parameters. There are plenty of additional noise textures included in this Asset.
+1. **(Texture Animation)** Some effects using flipbooks, you can control the animation speed in the material settings. You also can control the animation manually via vertex stream, enable "MV Particle Frame Control Enabled" parameter to do so.
+1. **(Control Particles)** These particles used only to spawn other particles via SubEmitters. For example, every missile spawned like an invisible control particle, and this particle spawns other particles/parts of the missile, like fire trails, fire, and the mesh itself. So, by adjusting the Emission frequency of the control particle, you can easily increase the missile number.
 
 ### Advanced Adjustments
 
-1. (**Vertex Stream**) You can adjust any vertex stream to make particles disappear faster or slower, being more bright at the start, or being more distorted. Check the "Custom Vertex Streams" documentation page for more information.
-1. (**Shader Editing**) Shaders for Standard pipeline made with Amplify Shader Editor. And shader for HDRP/URP are made with native Shader Graph. You can freely edit and add parameters to shader graphs.
+1. **(Vertex Stream)** You can adjust any vertex stream to make particles disappear faster or slower, being more bright at the start, or being more distorted. Check the "Custom Vertex Streams" documentation page for more information.
+1. **(Shader Editing)** Shaders for Standard pipeline made with Amplify Shader Editor. And shader for HDRP/URP are made with native Shader Graph. You can freely edit and add parameters to shader graphs.
 
 
 
