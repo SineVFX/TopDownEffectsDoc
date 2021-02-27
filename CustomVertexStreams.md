@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Custom Vertex Streams
-nav_order: 2
+nav_order: 5
 ---
 
 ## Custom Vertex Streams
