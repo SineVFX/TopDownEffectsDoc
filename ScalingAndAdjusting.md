@@ -30,8 +30,8 @@ Materials have a lot of settings, just play with them and create your own unique
 
 ### Advanced Adjustments
 
-1. (Vertex Stream) You can adjust any vertex stream to make particles disappear faster or slower, being more bright at the start, or being more distorted. Check the "Custom Vertex Streams" documentation page for more information.
-1. (Shader Editing) Shaders for Standard pipeline made with Amplify Shader Editor. And shader for HDRP/URP are made with native Shader Graph. You can freely edit and add parameters to shader graphs.
+1. (**Vertex Stream**) You can adjust any vertex stream to make particles disappear faster or slower, being more bright at the start, or being more distorted. Check the "Custom Vertex Streams" documentation page for more information.
+1. (**Shader Editing**) Shaders for Standard pipeline made with Amplify Shader Editor. And shader for HDRP/URP are made with native Shader Graph. You can freely edit and add parameters to shader graphs.
 
 
 
