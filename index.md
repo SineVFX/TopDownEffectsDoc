@@ -4,11 +4,11 @@ title: Quick Start
 nav_order: 1
 ---
 
-## Quick start:
+## Quick start
 
 First of all, you need to unpack the right packages for your specific setup of Unity. This Asset contains three packages, for **Standard**, **HDRP**, and **URP** pipelines. Start with **Step_1_CoreResources** package, it will add all core resources (textures, scripts, and animations) needed for this Asset. After that, pick the right SRP package and unpack it too. It will add all other components like prefabs of complete effects, scenes, materials, and shaders. If you using Standard pipeline and already have PostProcessing Stack V2 in your project, you can uncheck it when unpacking the **Standard** package.
 
-### Important notes:
+### Important notes
 
 1. (URP) Make sure, you enable HDR, Depth and Opaque textures in URP Asset settings.
 ![s19](/assets/images/Screenshot_19.png)
@@ -20,7 +20,7 @@ First of all, you need to unpack the right packages for your specific setup of U
 
 
 
-### How to use:
+### How to use
 
 1. First of all, check two scenes "DemoScene_MainEffects", and "DemoScene_SeparateEffects" in the Scenes folder. First one contains complete effects, you can spawn it with right click. Second one containts additional effects, some environment design meshes, and example particle systems.
 1. Drag and Drop prefabs from the "CompleteEffects" folder into your scene and they will automatically play on awake. You can just instantiate these prefabs in your scripts, or create an object pool system, enabling and disabling array of effects.
@@ -30,7 +30,7 @@ First of all, you need to unpack the right packages for your specific setup of U
 
 
 
-### Basic adjustments and customization:
+### Basic adjustments and customization
 
 1. You can scale, rotate and transform the prefab like you normally do.
 1. When you scale the effect, you might also need to adjust the noise scale inside Material settings.
