@@ -6,7 +6,7 @@ nav_order: 5
 
 ## Custom Vertex Streams
 
-Many Particle Effects parameters are controlled via Custom Vertex Streams. Such parameters like Emission Power, Dissolve Progress, Appear and Disappear, Random Offset for Noise Textures, and etc. Check the name of a shader used in the Particle System, find it on this page, and check what each Custom Vertex Stream does. Try to modify, for example, the Dissolve Progress parameter for "DissolveParticleAdvanced" shader and make particles disappear quicker or slower.
+Many Particle Effects parameters are controlled via Custom Vertex Streams. Such parameters like Emission Power, Dissolve Progress, Appear and Disappear, Random Offset for Noise Textures, and etc. Check the name of a shader used in the Particle System, find it on this page, and check what each Custom Vertex Stream does. Try to modify, for example, the Dissolve Progress parameter for the "DissolveParticleAdvanced" shader and make particles disappear quicker or slower.
 
 ![s17](/assets/images/Screenshot_17.png)
 
@@ -31,7 +31,7 @@ For more information, you can check the official Unity Documentation: [https://d
 
 ### DissolveParticleDepth:
 
-* **Custom1.X / UV0.Z** - Emission Multiplier, control the emission power over lifetime
+* **Custom1.X / UV0.Z** - Emission Multiplier, control the emission power over the lifetime
 * **Custom1.Y / UV0.W** - Offset and Dissolve Progress, this parameter will affect both the dissolve and offset parameters
 * **Size / UV1.X** - Adjusting the scale multiplier depending on particle size (No need to modify this parameter, it is a fix)
 
