@@ -45,66 +45,39 @@ Second Mask is used mainly for appear effect of Indicator Effects and some othe 
 * **Second Mask Fract Switch** - Apply fract function to the second mask, making it looks like a saw wave
 * **Second Mask Fract Shrink** - Stretching the resulting fract mask
 
-### DissolveParticleSimple:
+Noise parameters are generally used to customize the mask of the effect. This is the most adjustable part of the effects, you can freely change and scale the noise textures. There are plenty of noise textures in this Asset.
 
-A simple dissolving particle, used for embers, small stars and simillar particle effects.
+* **Noise, Noise 01 and Noise 02** - Noise textures for creating the final noise mask, you can play with this parameter freely and use your own noise textures
+* **Noise Scale** - Scale of the noise texture
+* **Noise Negate** - Negating the noise texture, making it full white
+* **Noise Exp** - Applying Power (Math) the Noise texture
+* **Noise Scroll Speed** - Scroll/Panning speed of the texture
+* **Noise Random Min Max** - Min and Max parameter for making a unique noise texture offset for each particle
+* **Noise Radial** - Change UV fron regular to radial mapping
 
-* **Custom1.X / UV0.Z** - Random value for adjusting offset of the Main Texture
-* **Custom1.Y / UV0.W** - Random value for adjusting scale of the Main Texture
-* **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
-* **Custom1.W / UV1.Y** - Random value for flipbook frames
+Dissolve Texture is used for the dissolve/disappear effect. It has many parameters, controlling the slope of the dissolve, scale, and edges emission.
 
-### DissolveParticleAdvanced:
+* **Dissolve Texture Flip Switch** - Flip the dissolve texture colors (one minus dissolve texture colors)
+* **Dissolve Texture Scale** - Scale of the dissolve texture
+* **Dissolve Texture Min Max** - Min and Max parameter for making a unique dissolve texture offset for each particle
+* **Dissolve Texture Radial** - Change UV fron regular to radial mapping
+* **Dissolve Texture Exp** - Applying Power (Math) the dissolve texture
+* **Dissolve Texture Exp Reversed** - Applying Power (Math) the dissolve texture based on particle lifetime, also in reverse
+* **Dissolve Glow** - Set of parameters, controlling the glowind edges when the dissolve is happening
+* **Dissolve Mask** - Sets the direction (with a texture mask) along which the dissolve will occur
+* **Dissolve Steepness** - Control the steepness/slope of the dissolve mask
 
-* **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
-* **Custom1.Y / UV0.W** - Distortion Power Multiplier, used to control texture distortion over lifetime
-* **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
-* **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over lifetime
-* **Custom2.X / UV1.Z** - Secondary Mask offset, used to multiply opacity by moving this mask texture with Vertex Streams
-* **Custom2.Y / UV1.W** - Secondary Mask negate, use this to control how much Second Mask affecting opacity
-* **ustom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
+Dissolve Texture is used for the dissolve/disappear effect. It has many parameters, controlling the slope of the dissolve, scale, and edges emission.
 
-### DissolveParticleDepth:
-
-* **Custom1.X / UV0.Z** - Emission Multiplier, control the emission power over the lifetime
-* **Custom1.Y / UV0.W** - Offset and Dissolve Progress, this parameter will affect both the dissolve and offset parameters
-* **Size / UV1.X** - Adjusting the scale multiplier depending on particle size (No need to modify this parameter, it is a fix)
-
-### DissolveParticleGroundPacked:
-
-* **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
-* **Custom1.Y / UV0.W** - Secondary Mask (Appear/Initialize) progress, use this to make effect appear
-* **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
-* **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over lifetime
-* **Custom2.X / UV1.Z** - Lava Appear progress, control the appearence of lava
-
-### FakeTrailAndMeshFireParticles:
-
-* **Custom1.X / UV0.Z** - Control the U gradient mask, used for fade in and fade out effects of the fire
-* **Custom1.Y / UV0.W** - Custom UV offset animation, moving the whole fire mask texture, used to make moving fire trail look more realistic
-* **Custom1.Z / UV1.X** - Random value for each particle, to make them look slightly different
-
-### DissolveParticleMV / DissolveParticleFlipBook:
-
-* **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
-* **Custom1.Y / UV0.W** - Distortion Power Multiplier, used to control texture distortion over lifetime
-* **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
-* **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over lifetime
-* **Custom2.X / UV1.Z** - Secondary Mask offset, used to multiply opacity by moving this mask texture with Vertex Streams
-* **Custom2.Y / UV1.W** - Secondary Mask negate, use this to control how much Second Mask affecting opacity
-* **Custom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
-* **Custom2.W / UV2.Y** - Custom frame animation control for a flipbook texture, enable "MV Particle Frame Control Enabled" parameter in material settings to use this Vertex Stream.
-
-### CenterCurve:
-
-* **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
-* **Custom1.Y / UV0.W** - Emission Multiplier, control the emission power over lifetime
-* **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
-* **Custom1.W / UV1.Y** - Second Mask offset progress, used to move the second mask on V coordinate
-
-### Props:
-
-* **Custom1.Z / UV1.X** - Dissolve/Appear Effect progress control. Used to control the dissolve effect of the mesh when it appears or disappears.
+* **Dissolve Texture Flip Switch** - Flip the dissolve texture colors (one minus dissolve texture colors)
+* **Dissolve Texture Scale** - Scale of the dissolve texture
+* **Dissolve Texture Min Max** - Min and Max parameter for making a unique dissolve texture offset for each particle
+* **Dissolve Texture Radial** - Change UV fron regular to radial mapping
+* **Dissolve Texture Exp** - Applying Power (Math) the dissolve texture
+* **Dissolve Texture Exp Reversed** - Applying Power (Math) the dissolve texture based on particle lifetime, also in reverse
+* **Dissolve Glow** - Set of parameters, controlling the glowind edges when the dissolve is happening
+* **Dissolve Mask** - Sets the direction (with a texture mask) along which the dissolve will occur
+* **Dissolve Steepness** - Control the steepness/slope of the dissolve mask
 
 
 
