@@ -6,12 +6,12 @@ nav_order: 4
 
 ## Material Parameters
 
-Here is the description of the most tricky material parameters. Most parameters are named according to what they do to the materil, but some requeres a more detailed explanation. Parameters sorted per shader name, you can see it on top of material when selected in the inspector.
+Here is the description of the most tricky material parameters. Most parameters are named according to what they do to the material, but some require a more detailed explanation. Parameters sorted per shader name, you can see it on top of material when selected in the inspector.
 
 ### General Material Parameters / DissolveParticleAdvanced:
 
 
-Final parameters are mostly used to adjust the result look of the effect, its emission power, color (if not using Ramp) and opacity
+Final parameters are mostly used to adjust the result look of the effect, its emission power, color (if not using Ramp), and opacity
 
 * **Final Color** - Emission color of affected particles
 * **Final Power** - Final brightness of the image, you need to lower this value if you using "Gamma Rendering" Mode
@@ -24,7 +24,7 @@ Other Ramp parameters just used to further customize the gradient coloring mode
 * **Ramp Enabled** - Use ramp gradient texture to colorize particles
 * **Ramp** - Gradient texture, located in "VFXTextures" folder
 * **Ramp Color Tint** - Multiply ramp texture by this color
-* **Ramp Affected By Dynamics** - How much Dynamics (dissolving and appear effects) will affect the ramp texture. So, when the particle is begin to dissolve, the color of dissolve areas will change according to ramp gradient.
+* **Ramp Affected By Dynamics** - How much Dynamics (dissolving and appear effects) will affect the ramp texture. So, when the particle begins to dissolve, the color of dissolve areas will change according to the ramp gradient.
 * **Ramp Offset Multiply** - Multiply the Ramp position, use it to offset ramp colors
 * **Ramp Offset Exp** - Power (Math) the Ramp position, use it to offset ramp colors but in a more smooth way.
 * **Ramp Ignore Vertex Color** - Ramp ignore the particle/vertex color
@@ -32,33 +32,33 @@ Other Ramp parameters just used to further customize the gradient coloring mode
 
 Custom Color mask is used when you need to color your particles with a ramp gradient using a specific mask.
 
-* **Custom Color Mask Channels** - What channels to use from color mask
+* **Custom Color Mask Channels** - What channels to use from the color mask
 * **Custom Color Mask Switch** - Enabling and disabling the mask
-* **Custom Color Mask Affected By Dynamics** - How much Dynamics (dissolving and appear effects) will affect the mask texture. So, when the particle is begin to dissolve, the color of dissolve areas will change according to mask and ramp gradient.
+* **Custom Color Mask Affected By Dynamics** - How much Dynamics (dissolving and appear effects) will affect the mask texture. So, when the particle begins to dissolve, the color of dissolve areas will change according to mask and ramp gradient.
 
 
-Second Mask is used mainly for appear effect of Indicator Effects and some othe particles. It is also controlled with Custom Vertex Stream.
+The second Mask is used mainly to appear the effect of Indicator Effects and some other particles. It is also controlled with Custom Vertex Stream.
 
 * **Second Mask Profile** - Profile gradient mask, utilizing R (emission boost) and G (opacity) channels.
 * **Second Mask Negate** - Negating/disabling the second mask
 * **Second Mask VS Move** - Moving the second mask UV, driven by Custom Vertex Stream
-* **Second Affects Distortion** - Distortion only applies to the R channel of second mask
-* **Second Mask Noise 01 Negate** - Noise 01 will be negated in the R channel of second mask
-* **Second Mask Affects Ramp** - R channel of second mask will be added to the ramp, adjusting the ramp position as a result
-* **Second Mask Boosts Emission** - Boosting emission in the R channel of second mask
+* **Second Affects Distortion** - Distortion only applies to the R channel of the second mask
+* **Second Mask Noise 01 Negate** - Noise 01 will be negated in the R channel of the second mask
+* **Second Mask Affects Ramp** - R channel of the second mask will be added to the ramp, adjusting the ramp position as a result
+* **Second Mask Boosts Emission** - Boosting emission in the R channel of the second mask
 * **Second Mask Fract Switch** - Apply fract function to the second mask, making it looks like a saw wave
 * **Second Mask Fract Shrink** - Stretching the resulting fract mask
 
 
 Noise parameters are generally used to customize the mask of the effect. This is the most adjustable part of the effects, you can freely change and scale the noise textures. There are plenty of noise textures in this Asset.
 
-* **Noise, Noise 01 and Noise 02** - Noise textures for creating the final noise mask, you can play with this parameter freely and use your own noise textures
+* **Noise, Noise 01, and Noise 02** - Noise textures for creating the final noise mask, you can play with this parameter freely and use your own noise textures
 * **Noise Scale** - Scale of the noise texture
 * **Noise Negate** - Negating the noise texture, making it full white
 * **Noise Exp** - Applying Power (Math) the Noise texture
 * **Noise Scroll Speed** - Scroll/Panning speed of the texture
 * **Noise Random Min Max** - Min and Max parameter for making a unique noise texture offset for each particle
-* **Noise Radial** - Change UV fron regular to radial mapping
+* **Noise Radial** - Change UV from regular to radial mapping
 
 
 Dissolve Texture is used for the dissolve/disappear effect. It has many parameters, controlling the slope of the dissolve, scale, and edges emission.
@@ -66,10 +66,10 @@ Dissolve Texture is used for the dissolve/disappear effect. It has many paramete
 * **Dissolve Texture Flip Switch** - Flip the dissolve texture colors (one minus dissolve texture colors)
 * **Dissolve Texture Scale** - Scale of the dissolve texture
 * **Dissolve Texture Min Max** - Min and Max parameter for making a unique dissolve texture offset for each particle
-* **Dissolve Texture Radial** - Change UV fron regular to radial mapping
+* **Dissolve Texture Radial** - Change UV from regular to radial mapping
 * **Dissolve Texture Exp** - Applying Power (Math) the dissolve texture
 * **Dissolve Texture Exp Reversed** - Applying Power (Math) the dissolve texture based on particle lifetime, also in reverse
-* **Dissolve Glow** - Set of parameters, controlling the glowind edges when the dissolve is happening
+* **Dissolve Glow** - Set of parameters, controlling the glowing edges when the dissolve is happening
 * **Dissolve Mask** - Sets the direction (with a texture mask) along which the dissolve will occur
 * **Dissolve Steepness** - Control the steepness/slope of the dissolve mask
 
@@ -139,11 +139,37 @@ Most parameters in this shield/barrier effect shader are self explanetory. It us
 
 ### DissolveParticleGroundPacked:
 
-* **MV Main Mask** - Main flip book mask
-* **MV Main Mask Motion Vectors** - Motion vectors, for the smooth slow-motion animation
-* **MV Random Frame** - Start the animation from random frame when particle is spawned
-* **MV Distortion Frame Offset** - Don't change this parameter, it is used for setting up the right value for smooth Motion Vectors transition technique
-* **MV Particle Frame Control Enabled** - Use particle system custom vertex stream instead of "MV Animation Speed" to control the animation of flip book
+* **PackedTex** - Packed ground texture, you can pick from many different ones
+* **Height Slope Control** - Msaking slopes smoother
+* **Height Boost** - Increase height of PackedTex texture
+* **Height Map Negate** - Negating the B channel (baked height) of PackedTex texture
+* **Albedo** - Colorize the ground rocks
+* **Opacity Mask** - Main opacity mask, applied to the whole effect
+* **Second Mask** - Second mask is used only for appear effect (Also controlled with Custom Vertex Streams)
+* **Lava Appear Mask** - This mask is used to make lava appear, respecting the final height parameter of a texture (Also controlled with Custom Vertex Streams)
+* **Surface Noise** - Add noise texture to the final height
+* **Valleys Emission Boost** - Boosts emission if valleys
+* **Cracks** - Applying cracks texture to the albedo (color of non-emissive ground) and height
+* **Dissolve Texture** - This section is used for dissolve/disappear effect (Also controlled with Custom Vertex Streams)
+
+
+### DissolveParticleDepth:
+
+* **Rim Mask** - Simple Rim/Fresnel effect
+* **Offset Noise** - Used for the mesh/particle surface offset (Also controlled with Custom Vertex Streams)
+* **Depth Fade** - Depth fade effect (similar to the Soft Particle effect), can be flipped and will boost emission of intersecting parts instead
+
+
+### FakeTrailAndMeshFireParticle:
+
+* **Main Mask** - Main texture mask of a trail, set it to Clamp only on V coordinate
+* **Squeeze UV** - Squeezing UV towards the start point of fire/trail particle
+* **Fake Trail Scroll** - This section is used to control the scrolling animation of a trail (Also controlled with Custom Vertex Streams)
+
+
+### DissolveParticleFlipBook:
+
+This shader is basically the same as DissolveParticleAdvanced, but using flipbooks for its animation. Used mostly for electric and lightning effects, it also has dissolve/appear effects. Set the rows and columns of the material, rotate the UV as you like and it is mostly done. For other parameters, check the DissolveParticleAdvanced section on the top of this page.
 
 
 
