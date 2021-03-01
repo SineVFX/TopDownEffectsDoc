@@ -116,10 +116,34 @@ Soft particles is a common effects, it is making particle less visible when they
 * **Appear Gradient** - This section if used mainly for appear/disappear effects. Animate the "Appear Gradient Offset" parameter and see the results.
 
 
-### CenterCurve:
+### Props:
 
-* **Second Mask** - In this shader, Second Mask is used differently. It is a projectile texture, scrolled along the UV of the mesh, making the final effect.
-* **Fresnel Mask** - Rim Mask, used to hide sharp edges of the effect mesh.
+* **Albedo Decal** - Coloring the decal parts of Albedo map
+* **Rim Emission** - Simple Rim/Fresnel effect
+* **Dissolve** - This section controls the dissolve/appear effect of the mesh, check the complete effects (like HammerStrine or SourceEnergyShield) for the examples.
+
+
+### MaskedDoubleSidedAdvanced:
+
+Most parameters in this shield/barrier effect shader are self explanetory. It uses many Noise textures to make the effect, you can tweak all the parameters in real-time to see what they do. Check the effects like FireBarrier or WaterBarrier to see this shader in action. The main parameter is "Appear Progress" it is animated with a regular Unity animation system.
+
+
+### DissolveParticleMV:
+
+* **MV Main Mask** - Main flip book mask
+* **MV Main Mask Motion Vectors** - Motion vectors, for the smooth slow-motion animation
+* **MV Random Frame** - Start the animation from random frame when particle is spawned
+* **MV Distortion Frame Offset** - Don't change this parameter, it is used for setting up the right value for smooth Motion Vectors transition technique
+* **MV Particle Frame Control Enabled** - Use particle system custom vertex stream instead of "MV Animation Speed" to control the animation of flip book
+
+
+### DissolveParticleGroundPacked:
+
+* **MV Main Mask** - Main flip book mask
+* **MV Main Mask Motion Vectors** - Motion vectors, for the smooth slow-motion animation
+* **MV Random Frame** - Start the animation from random frame when particle is spawned
+* **MV Distortion Frame Offset** - Don't change this parameter, it is used for setting up the right value for smooth Motion Vectors transition technique
+* **MV Particle Frame Control Enabled** - Use particle system custom vertex stream instead of "MV Animation Speed" to control the animation of flip book
 
 
 
