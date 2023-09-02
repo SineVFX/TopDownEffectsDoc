@@ -27,7 +27,7 @@ For more information, you can check the official Unity Documentation: [https://d
 * **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over lifetime
 * **Custom2.X / UV1.Z** - Secondary Mask offset, used to multiply opacity by moving this mask texture with Vertex Streams
 * **Custom2.Y / UV1.W** - Secondary Mask negate, use this to control how much Second Mask affecting opacity
-* **ustom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
+* **Custom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
 
 ### DissolveParticleDepth:
 
