@@ -12,7 +12,7 @@ Materials have a lot of settings, just play with them and create your own unique
 
 ### Scaling
 
-* You can scale, rotate and transform the prefab like you normally do.
+* You can scale, rotate, and transform the prefab like you normally do.
 * When you scale one of these effects (StormBeacon, SummonStorm, IonMarker, FusionCore), you might also need to adjust the "Soft Particles Distance" parameter of smoke and clouds-like materials. For example, if you scale your model by 0.01, you need to multiply this parameter by the same amount. By default it is set to 0.2f and the result value should be 0.002f, but this depends on camera depth, sometimes you need to adjust it by eye.
 
 ![s20](/assets/images/Screenshot_20.png)
@@ -23,15 +23,15 @@ Materials have a lot of settings, just play with them and create your own unique
 
 ![s21](/assets/images/Screenshot_21.png)
 
-* **(Timing and Duration)** These parameters can be adjusted manually. Select particle system and check parameters like "Start Delay", delay in "Emission" module, Sub Emitters parameters, and animation (when effect using animation component, like HammerStrike or HoloShield).
+* **(Timing and Duration)** These parameters can be adjusted manually. Select the particle system and check parameters like "Start Delay", delay in the "Emission" module, Sub Emitters parameters, and animation (when effect using animation component, like HammerStrike or HoloShield).
 * **(Noise)** Effects have many Noise textures, try to change their scroll speed and scale parameters. There are plenty of additional noise textures included in this Asset.
-* **(Texture Animation)** Some effects using flipbooks, you can control the animation speed in the material settings. You also can control the animation manually via vertex stream, enable "MV Particle Frame Control Enabled" parameter to do so.
-* **(Control Particles)** These particles used only to spawn other particles via SubEmitters. For example, every missile spawned like an invisible control particle, and this particle spawns other particles/parts of the missile, like fire trails, fire, and the mesh itself. So, by adjusting the Emission frequency of the control particle, you can easily increase the missile number.
+* **(Texture Animation)** Some effects using flipbooks, you can control the animation speed in the material settings. You also can control the animation manually via vertex stream, enabling the "MV Particle Frame Control Enabled" parameter to do so.
+* **(Control Particles)** These particles are used only to spawn other particles via SubEmitters. For example, every missile spawned like an invisible control particle, and this particle spawned other particles/parts of the missile, like fire trails, fire, and the mesh itself. So, by adjusting the Emission frequency of the control particle, you can easily increase the missile number.
 
 ### Advanced Adjustments
 
 * **(Vertex Stream)** You can adjust any vertex stream to make particles disappear faster or slower, being more bright at the start, or being more distorted. Check the "Custom Vertex Streams" documentation page for more information.
-* **(Shader Editing)** Shaders for Standard pipeline made with Amplify Shader Editor. And shader for HDRP/URP are made with native Shader Graph. You can freely edit and add parameters to shader graphs.
+* **(Shader Editing)** Shaders for Standard pipeline made with Amplify Shader Editor. And shaders for HDRP/URP are made with native Shader Graph. You can freely edit and add parameters to shader graphs.
 
 
 
