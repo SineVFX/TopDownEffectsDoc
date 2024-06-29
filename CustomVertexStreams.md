@@ -31,8 +31,8 @@ For more information, you can check the official Unity Documentation: [https://d
 
 Changes in version 2.0
 {: .label .label-green }
-* **Custom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
-* **Custom2.W / UV2.Y** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
+* **Custom2.Z / UV2.X** - UV Offset / Scroll of a Distortion texture, used to imitate heat effects
+* **Custom2.W / UV2.Y** - Controls the Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
 
 ### DissolveParticleDepth:
 
@@ -64,6 +64,28 @@ Changes in version 2.0
 * **Custom2.Y / UV1.W** - Secondary Mask negate, use this to control how much Second Mask affecting opacity
 * **Custom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
 * **Custom2.W / UV2.Y** - Custom frame animation control for a flipbook texture, enable "MV Particle Frame Control Enabled" parameter in material settings to use this Vertex Stream.
+
+Changes in version 2.0
+{: .label .label-green }
+* **Custom2.Z / UV2.X** - Controls the Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
+
+New shader in version 2.0
+{: .label .label-green }
+### DissolveParticleWave:
+This is a variation of a DissolveParticleAdvanced shader with some tweaks, used to make wave-like effects.
+
+* **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
+* **Custom1.Y / UV0.W** - Distortion Power Multiplier, used to control texture distortion over lifetime
+* **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
+* **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over lifetime
+* **Custom2.X / UV1.Z** - 
+* **Custom2.Y / UV1.W** - Main Mask offset, used to create a moving wave effect
+* **Custom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
+
+Changes in version 2.0
+{: .label .label-green }
+* **Custom2.Z / UV2.X** - UV Offset / Scroll of a Distortion texture, used to imitate heat effects
+* **Custom2.W / UV2.Y** - Controls the Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
 
 ### CenterCurve:
 
