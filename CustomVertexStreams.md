@@ -29,7 +29,8 @@ For more information, you can check the official Unity Documentation: [https://d
 * **Custom2.Y / UV1.W** - Secondary Mask negate, use this to control how much Second Mask affecting opacity
 * **Custom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
 
-Stable {: .label .label-green }
+Stable
+{: .label .label-green }
 
 * **Custom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
 * **Custom2.W / UV2.Y** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
