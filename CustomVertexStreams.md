@@ -69,8 +69,6 @@ Changes in version 2.0
 {: .label .label-green }
 * **Custom2.Z / UV2.X** - Controls the Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
 
-New shader in version 2.0
-{: .label .label-green }
 ### DissolveParticleWave:
 This is a variation of a DissolveParticleAdvanced shader with some tweaks, used to make wave-like effects.
 
