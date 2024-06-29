@@ -26,13 +26,13 @@ Changes in version 2.0
 Other Ramp parameters are just used to further customize the gradient coloring mode
 
 * **Ramp Enabled** - Use ramp gradient texture to colorize particles
-* **Ramp** - Gradient texture, located in "VFXTextures" folder
+* **Ramp** - Gradient texture, located in the "VFXTextures" folder
 * **Ramp Color Tint** - Multiply ramp texture by this color
 * **Ramp Affected By Dynamics** - How much Dynamics (dissolving and appear effects) will affect the ramp texture. So, when the particle begins to dissolve, the color of dissolve areas will change according to the ramp gradient.
 * **Ramp Offset Multiply** - Multiply the Ramp position, and use it to offset ramp colors
 * **Ramp Offset Exp** - Power (Math) the Ramp position, and use it to offset ramp colors but in a more smooth way.
 * **Ramp Ignore Vertex Color** - Ramp ignore the particle/vertex color
-* 
+
 Changes in version 2.0
 {: .label .label-yellow }
 * **Ramp Add** - Add a value to a Ramp Mask, offsetting the gradient.
@@ -55,7 +55,7 @@ The second Mask is used mainly to show the effect of Indicator Effects and some 
 * **Second Mask Noise 01 Negate** - Noise 01 will be negated in the R channel of the second mask
 * **Second Mask Affects Ramp** - The R channel of the second mask will be added to the ramp, adjusting the ramp position as a result
 * **Second Mask Boosts Emission** - Boosting emission in the R channel of the second mask
-* **Second Mask Fract Switch** - Apply fract function to the second mask, making it looks like a saw wave
+* **Second Mask Fract Switch** - Apply fract function to the second mask, making it look like a saw wave
 * **Second Mask Fract Shrink** - Stretching the resulting fract mask
 
 
