@@ -96,9 +96,14 @@ Distortion Texture is used for the UV distortion effect.
 Changes in version 2.0
 {: .label .label-yellow }
 * **Distortion Scroll VS Enabled** - Enables the Vertex Stream used for scrolling the distortion texture, useful for heat emitation.
+* **Radial Distortion Intensity Switch** - Enabled Radial Mask to control the distortion intensity, lower intensity at the center and higher at the edge.
+* **Radial Distortion Exp** - Control the smoothness of the Radial Distortion Mask.
+* **Radial Visibility Switch** - Apply the Radial Mask to control the opacity of the wave effect.
+* **Radial Visibility Mask Value** - Offsets the Radial Mask.
+* **Radial Visibility Mask Exp** -  Control the smoothness of the Radial Opacity Mask.
 
 
-Soft particles is a common effect, it is making particle less visible when they intersect other geometry.
+Soft particles is a common effect, it is making particles less visible when they intersect other geometry.
 
 * **Soft Particles Enabled** - Enable the soft particles effect
 * **Soft Particles Enabled** - Distance/Thickness of the effect
