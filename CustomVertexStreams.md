@@ -15,18 +15,18 @@ For more information, you can check the official Unity Documentation: [https://d
 ### DissolveParticleSimple:
 
 * **Custom1.X / UV0.Z** - Random value for adjusting the offset of Main Texture
-* **Custom1.Y / UV0.W** - Random value for adjusting scale of the Main Texture
+* **Custom1.Y / UV0.W** - Random value for adjusting the scale of the Main Texture
 * **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
 * **Custom1.W / UV1.Y** - Random value for flipbook frames
 
 ### DissolveParticleAdvanced:
 
 * **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
-* **Custom1.Y / UV0.W** - Distortion Power Multiplier, used to control texture distortion over lifetime
+* **Custom1.Y / UV0.W** - Distortion Power Multiplier, used to control texture distortion over a lifetime
 * **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
-* **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over lifetime
+* **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over a lifetime
 * **Custom2.X / UV1.Z** - Secondary Mask offset, used to multiply opacity by moving this mask texture with Vertex Streams
-* **Custom2.Y / UV1.W** - Secondary Mask negate, use this to control how much Second Mask affecting opacity
+* **Custom2.Y / UV1.W** - Secondary Mask negate, use this to control how much Second Mask affects the opacity
 * **Custom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
 
 Changes in version 2.0
@@ -43,14 +43,14 @@ Changes in version 2.0
 ### DissolveParticleGroundPacked:
 
 * **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
-* **Custom1.Y / UV0.W** - Secondary Mask (Appear/Initialize) progress, use this to make effect appear
+* **Custom1.Y / UV0.W** - Secondary Mask (Appear/Initialize) progress, use this to make the effect appear
 * **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
-* **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over lifetime
-* **Custom2.X / UV1.Z** - Lava Appear progress, control the appearence of lava
+* **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over a lifetime
+* **Custom2.X / UV1.Z** - Lava Appear progress, control the appearance of lava
 
 ### FakeTrailAndMeshFireParticles:
 
-* **Custom1.X / UV0.Z** - Control the U gradient mask, used for fade in and fade out effects of the fire
+* **Custom1.X / UV0.Z** - Control the U gradient mask, used for fade-in and fade-out effects of the fire
 * **Custom1.Y / UV0.W** - Custom UV offset animation, moving the whole fire mask texture, used to make moving fire trail look more realistic
 * **Custom1.Z / UV1.X** - Random value for each particle, to make them look slightly different
 
@@ -59,11 +59,11 @@ Changes in version 2.0
 * **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
 * **Custom1.Y / UV0.W** - Distortion Power Multiplier, used to control texture distortion over lifetime
 * **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
-* **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over lifetime
+* **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over a lifetime
 * **Custom2.X / UV1.Z** - Secondary Mask offset, used to multiply opacity by moving this mask texture with Vertex Streams
-* **Custom2.Y / UV1.W** - Secondary Mask negate, use this to control how much Second Mask affecting opacity
+* **Custom2.Y / UV1.W** - Secondary Mask negate, use this to control how much Second Mask affects the opacity
 * **Custom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
-* **Custom2.W / UV2.Y** - Custom frame animation control for a flipbook texture, enable "MV Particle Frame Control Enabled" parameter in material settings to use this Vertex Stream.
+* **Custom2.W / UV2.Y** - Custom frame animation control for a flipbook texture, enable the "MV Particle Frame Control Enabled" parameter in material settings to use this Vertex Stream.
 
 Changes in version 2.0
 {: .label .label-yellow }
@@ -73,9 +73,9 @@ Changes in version 2.0
 This is a variation of a DissolveParticleAdvanced shader with some tweaks, used to make wave-like effects.
 
 * **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
-* **Custom1.Y / UV0.W** - Distortion Power Multiplier, used to control texture distortion over lifetime
+* **Custom1.Y / UV0.W** - Distortion Power Multiplier, used to control texture distortion over a lifetime
 * **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
-* **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over lifetime
+* **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over a lifetime
 * **Custom2.X / UV1.Z** - 
 * **Custom2.Y / UV1.W** - Main Mask offset, used to create a moving wave effect
 * **Custom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
@@ -88,7 +88,7 @@ Changes in version 2.0
 ### CenterCurve:
 
 * **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
-* **Custom1.Y / UV0.W** - Emission Multiplier, control the emission power over lifetime
+* **Custom1.Y / UV0.W** - Emission Multiplier, control the emission power over a lifetime
 * **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
 * **Custom1.W / UV1.Y** - Second Mask offset progress, used to move the second mask on V coordinate
 
