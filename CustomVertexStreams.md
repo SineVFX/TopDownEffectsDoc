@@ -30,7 +30,7 @@ For more information, you can check the official Unity Documentation: [https://d
 * **Custom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
 
 Changes in version 2.0
-{: .label .label-green }
+{: .label .label-yellow }
 * **Custom2.Z / UV2.X** - UV Offset / Scroll of a Distortion texture, used to imitate heat effects
 * **Custom2.W / UV2.Y** - Controls the Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
 
@@ -66,7 +66,7 @@ Changes in version 2.0
 * **Custom2.W / UV2.Y** - Custom frame animation control for a flipbook texture, enable "MV Particle Frame Control Enabled" parameter in material settings to use this Vertex Stream.
 
 Changes in version 2.0
-{: .label .label-green }
+{: .label .label-yellow }
 * **Custom2.Z / UV2.X** - Controls the Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
 
 ### DissolveParticleWave:
@@ -81,7 +81,7 @@ This is a variation of a DissolveParticleAdvanced shader with some tweaks, used 
 * **Custom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
 
 Changes in version 2.0
-{: .label .label-green }
+{: .label .label-yellow }
 * **Custom2.Z / UV2.X** - UV Offset / Scroll of a Distortion texture, used to imitate heat effects
 * **Custom2.W / UV2.Y** - Controls the Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
 
