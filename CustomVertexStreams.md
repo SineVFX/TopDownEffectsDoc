@@ -85,6 +85,18 @@ Changes in version 2.0
 * **Custom2.Z / UV2.X** - UV Offset / Scroll of a Distortion texture, used to imitate heat effects
 * **Custom2.W / UV2.Y** - Controls the Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
 
+### DissolveParticleCloudy:
+A new shader was added in version 2.0, useful for small cloud-like explosions.
+
+* **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
+* **Custom1.Y / UV0.W** - Heat Texture Emission Multiplier, control the emission power over a lifetime
+* **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
+* **Custom1.W / UV1.Y** - BLANK
+* **Custom2.X / UV1.Z** - BLANK
+* **Custom2.Y / UV1.W** - Cloud texture scroll/offset over a lifetime, enable the "Smoke Texture Scroll Manual" to see the effect.
+* **Custom2.Z / UV2.X** - Controls the Smoke Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
+* **Custom2.W / UV2.Y** - Controls the Heat Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
+
 ### CenterCurve:
 
 * **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
