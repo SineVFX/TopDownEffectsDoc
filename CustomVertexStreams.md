@@ -97,7 +97,7 @@ A new shader was added in version 2.0, useful for small cloud-like explosions.
 * **Custom2.Z / UV2.X** - Controls the Smoke Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
 * **Custom2.W / UV2.Y** - Controls the Heat Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
 
-### DissolveParticleCloudyCenterDistorted_v2:
+### DissolveParticleCloudyCenterDistorted:
 A new shader was added in version 2.0, useful for small cloud-like explosions that use center distortion. Movement is handled by the shader, not the Particle System.
 
 * **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
