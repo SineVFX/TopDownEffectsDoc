@@ -97,6 +97,18 @@ A new shader was added in version 2.0, useful for small cloud-like explosions.
 * **Custom2.Z / UV2.X** - Controls the Smoke Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
 * **Custom2.W / UV2.Y** - Controls the Heat Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
 
+### DissolveParticleCloudyCenterDistorted_v2:
+A new shader was added in version 2.0, useful for small cloud-like explosions that use center distortion. Movement is handled by the shader, not the Particle System.
+
+* **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
+* **Custom1.Y / UV0.W** - Heat Texture Emission Multiplier, control the emission power over a lifetime
+* **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
+* **Custom1.W / UV1.Y** - Center Distortion Amount, distort the cloud particles towards the center using a Screen Space Noise Texture.
+* **Custom2.X / UV1.Z** - Center Offset Amount, controls the offset animation of cloud particles.
+* **Custom2.Y / UV1.W** - Center Light Emission Multiplier, controls the emission power of face center light.
+* **Custom2.Z / UV2.X** - Controls the Smoke Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
+* **Custom2.W / UV2.Y** - Controls the Heat Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
+
 ### CenterCurve:
 
 * **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
