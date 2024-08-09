@@ -15,9 +15,31 @@ For more information, you can check the official Unity Documentation: [https://d
 ### DissolveParticleSimple:
 
 * **Custom1.X / UV0.Z** - Random value for adjusting the offset of Main Texture
-* **Custom1.Y / UV0.W** - Random value for adjusting the scale of the Main Texture
+* **Custom1.Y / UV0.W** - Random value for adjusting the scale of the Distortion Texture
 * **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
 * **Custom1.W / UV1.Y** - Random value for flipbook frames
+
+### DissolveParticleNonLinearProjectile:
+
+* **Custom1.X / UV0.Z** - Random value for adjusting the offset of Main Texture
+* **Custom1.Y / UV0.W** - Non-Linear Mask offset, used to imitate smooth projectile movement inside UV Space
+* **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
+* **Custom1.W / UV1.Y** - BLANK
+* **Custom2.X / UV1.Z** - BLANK
+* **Custom2.Y / UV1.W** - BLANK
+* **Custom2.Z / UV2.X** - BLANK
+* **Custom2.W / UV2.Y** - Controls the Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
+
+### DissolveParticleNonLinearFlow:
+
+* **Custom1.X / UV0.Z** - Random value for adjusting the offset of Main Texture
+* **Custom1.Y / UV0.W** - Non-Linear Mask offset, used to imitate smooth projectile movement inside UV Space
+* **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
+* **Custom1.W / UV1.Y** - BLANK
+* **Custom2.X / UV1.Z** - BLANK
+* **Custom2.Y / UV1.W** - UV Offset / Scroll of a Flow texture
+* **Custom2.Z / UV2.X** - UV Offset / Scroll of a Distortion texture, used to imitate heat effects
+* **Custom2.W / UV2.Y** - Controls the Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
 
 ### DissolveParticleAdvanced:
 
