@@ -33,7 +33,7 @@ For more information, you can check the official Unity Documentation: [https://d
 ### DissolveParticleNonLinearFlow:
 
 * **Custom1.X / UV0.Z** - Random value for adjusting the offset of Main Texture
-* **Custom1.Y / UV0.W** - Dissolve Inverted Mask progress, same as dissolve Vertex Stream, but from the other side of the Mask
+* **Custom1.Y / UV0.W** - Dissolve Inverted progress, same as Dissolve Vertex Stream below, but from the other side of the Mask
 * **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
 * **Custom1.W / UV1.Y** - BLANK
 * **Custom2.X / UV1.Z** - BLANK
