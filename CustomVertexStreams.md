@@ -41,6 +41,17 @@ For more information, you can check the official Unity Documentation: [https://d
 * **Custom2.Z / UV2.X** - UV Offset / Scroll of a Distortion texture, used to imitate heat effects
 * **Custom2.W / UV2.Y** - Controls the Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
 
+### DissolveParticleGroundWaveOffset:
+
+* **Custom1.X / UV0.Z** - Random value for adjusting the offset of Main Texture
+* **Custom1.Y / UV0.W** - Dissolve Inverted progress, same as Dissolve Vertex Stream below, but from the other side of the Mask
+* **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
+* **Custom1.W / UV1.Y** - Vertex Offset Multiplier
+* **Custom2.X / UV1.Z** - BLANK
+* **Custom2.Y / UV1.W** - UV Offset / Scroll of a Flow texture
+* **Custom2.Z / UV2.X** - UV Offset / Scroll of a Distortion texture, used to imitate heat effects
+* **Custom2.W / UV2.Y** - Controls the Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
+
 ### DissolveParticleAdvanced:
 
 * **Custom1.X / UV0.Z** - Random value for each particle, to make them look slightly different
