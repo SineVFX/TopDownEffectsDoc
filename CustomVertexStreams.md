@@ -108,8 +108,8 @@ Changes in version 2.0
 * **Custom1.Y / UV0.W** - Distortion Power Multiplier, used to control texture distortion over lifetime
 * **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
 * **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over a lifetime
-* **Custom2.X / UV1.Z** - Secondary Mask offset, used to multiply opacity by moving this mask texture with Vertex Streams
-* **Custom2.Y / UV1.W** - Secondary Mask negate, use this to control how much Second Mask affects the opacity
+* **Custom2.X / UV1.Z** - BLANK
+* **Custom2.Y / UV1.W** - BLANK
 * **Custom2.Z / UV2.X** - Controls the Gradient Ramp color by offsetting the mask texture, useful to imitate Fire to Smoke transitions
 * **Custom2.W / UV2.Y** - Custom frame animation control for a flipbook texture, enable the "MV Particle Frame Control Enabled" parameter in material settings to use this Vertex Stream.
 
