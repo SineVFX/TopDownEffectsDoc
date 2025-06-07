@@ -120,7 +120,7 @@ This is a variation of a DissolveParticleAdvanced shader with some tweaks, used 
 * **Custom1.Y / UV0.W** - Distortion Power Multiplier, used to control texture distortion over a lifetime
 * **Custom1.Z / UV1.X** - Dissolve progress, used to control the dissolve effect
 * **Custom1.W / UV1.Y** - Emission Multiplier, control the emission power over a lifetime
-* **Custom2.X / UV1.Z** - 
+* **Custom2.X / UV1.Z** - BLANK
 * **Custom2.Y / UV1.W** - Main Mask offset, used to create a moving wave effect
 * **Custom2.Z / UV2.X** - Distortion Mask offset, used to multiply distortion by moving this mask texture with Vertex Streams
 
