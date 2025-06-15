@@ -213,6 +213,19 @@ Changes in version 2.0
 * **Smoke Texture Spherical Distance** - Control the spherical distortion of the smoke texture
 * **Border Smooth Amount** - Making the borders of the sprite smoother
 
+### DissolveParticleCloudyCenterDistorted_v2:
+
+* **Center Offset Multiply** - 
+* **Center Light Attenuation** - 
+* **Center Light Exp** - 
+* **Center Light Emission Power** - 
+* **Center Light Color** - 
+* **Center Distortion Noise** - 
+* **Center Distortion Noise Negate** - 
+* **Center Distortion Noise Scale U and V** - 
+* **Center Distortion Amount** - 
+* **Center Distortion Random Rotation** - 
+
 
 ### DissolveParticleGroundWaveOffset_v2:
 
@@ -227,6 +240,14 @@ Changes in version 2.0
 * **Explosion Lighting Vector Adjustment** - Adjust the screen-spaced vector for the fake smoke lighting.
 * **Dissolve Parameters** - Adding dissolve to the flipbook animation for more artistic control. More info for the dissolve parameters is available at the top of the page.
 * **Distortion Parameters** - Unlike in other shaders, distortion is only applied when the dissolve is present. More info for the distortion parameters is available at the top of the page.
+
+### DissolveParticleWave_v2:
+
+* **Radial Distortion Intensity Switch** - Switch enabling the radial intensity mask for the distortion. When enabled, the distortion will have less effect close the the center of the wave.
+* **Radial Distortion Exp** - Control the steepness of the radial distortion intensity mask.
+* **Radial Visibility Switch** - Enabled the additional radial mask for more visibility/opacity control.
+* **Radial Visibility Mask Value** - Offsets the radial visibility/opacity mask.
+* **Radial Visibility Mask Exp** - Control the radial visibility/opacity mask.
 
 
 
