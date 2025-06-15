@@ -192,7 +192,7 @@ This shader is basically the same as DissolveParticleAdvanced but uses flipbooks
 
 Changes in version 2.0
 {: .label .label-yellow }
-### DissolveParticleNonLinear...:
+### DissolveParticleNonLinear:
 
 * **Flow Texture** - Main noise texture used for the effect
 * **Flow Curve Exp** - Changing the animation curve of the scrolling Noise texture. Control the density of the noise towards the start or the end of the UV coordinate position.
@@ -208,23 +208,25 @@ Changes in version 2.0
 
 ### DissolveParticleCloudy_v2:
 
-* aa
-* a
-* a
+* **Smoke Lighting and Heat Textures** - Textures used for smoke and emissive heat effects
+* **Smoke Texture Scroll** - Control how the scrolling of a smoke texture is processed. If the manual mode is selected, use Vertex Streams for the scrolling
+* **Smoke Texture Spherical Distance** - Control the spherical distortion of the smoke texture
+* **Border Smooth Amount** - Making the borders of the sprite smoother
 
 
 ### DissolveParticleGroundWaveOffset_v2:
 
-* aa
-* a
-* a
+* **Flow Texture Parameters** - Same as in the "DissolveParticleNonLinear" shaders, their parameters are described above.
+* **Offset Wave Amount** - Strength of the vertex offset effect
 
 
 ### DissolveParticleMVForExplosions_v2:
 
-* aa
-* a
-* a
+* **Explosion Lighting Color 1 and 2** - Color of the smoke fake lighting
+* **Emission Vertex Stream Enabled** - Enables the vertex stream to control the emission intensity
+* **Explosion Lighting Vector Adjustment** - Adjust the screen-spaced vector for the fake smoke lighting.
+* **Dissolve Parameters** - Adding dissolve to the flipbook animation for more artistic control. More info for the dissolve parameters is available at the top of the page.
+* **Distortion Parameters** - Unlike in other shaders, distortion is only applied when the dissolve is present. More info for the distortion parameters is available at the top of the page.
 
 
 
