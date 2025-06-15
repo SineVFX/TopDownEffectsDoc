@@ -190,5 +190,42 @@ Most parameters in this shield/barrier effect shader are self-explanatory. It us
 This shader is basically the same as DissolveParticleAdvanced but uses flipbooks for its animation. Used mostly for electric and lightning effects, it also has dissolve/appear effects. Set the rows and columns of the material, rotate the UV as you like and it is mostly done. For other parameters, check the DissolveParticleAdvanced section at the top of this page.
 
 
+Changes in version 2.0
+{: .label .label-yellow }
+### DissolveParticleNonLinear...:
+
+* **Flow Texture** - Main noise texture used for the effect
+* **Flow Curve Exp** - Changing the animation curve of the scrolling Noise texture. Control the density of the noise towards the start or the end of the UV coordinate position.
+* **Flow Scale U** - Scaling of the noise texture in one direction
+* **Flow Scroll Speed** - Scroll speed of a main noise texture
+* **Flow Mask SS11-...-SS22** - SmoothStep parameters to create a smooth fade on both ends of a texture. It is recommended to use values between 0 and 1 to avoid sharp edges.
+* **Flow Texture 2** - Second noise texture used to multiply the first noise texture by it
+* **Flow Texture 2 Negate** - Negates the influence of a second noise texture
+* **Horizontal Mask** - Mask based on the U coordinate
+* **Global Mask** - Mask based on a separate texture, you can try using the included Mask textures
+* **MANUAL Dissolve Progress** - Control the dissolve from both sides. This parameter is only available in the mesh version of a shader.
+
+
+### DissolveParticleCloudy_v2:
+
+* aa
+* a
+* a
+
+
+### DissolveParticleGroundWaveOffset_v2:
+
+* aa
+* a
+* a
+
+
+### DissolveParticleMVForExplosions_v2:
+
+* aa
+* a
+* a
+
+
 
 ### Support email: sinevfx@gmail.com
