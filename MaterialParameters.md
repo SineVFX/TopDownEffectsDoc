@@ -215,16 +215,16 @@ Changes in version 2.0
 
 ### DissolveParticleCloudyCenterDistorted_v2:
 
-* **Center Offset Multiply** - 
-* **Center Light Attenuation** - 
-* **Center Light Exp** - 
-* **Center Light Emission Power** - 
-* **Center Light Color** - 
-* **Center Distortion Noise** - 
-* **Center Distortion Noise Negate** - 
-* **Center Distortion Noise Scale U and V** - 
-* **Center Distortion Amount** - 
-* **Center Distortion Random Rotation** - 
+* **Center Offset Multiply** - Controls the vertex offset of the particles from the center of the explosion VFX
+* **Center Light Attenuation** - Controls how far the fake lighting will go
+* **Center Light Exp** - Controls the curve of the fake light gradient
+* **Center Light Emission Power** - Emission power of center lighting
+* **Center Light Color** - Color of the light
+* **Center Distortion Noise** - Noise texture in screen space radial UV
+* **Center Distortion Noise Negate** - Controls the influence of the noise texture
+* **Center Distortion Noise Scale U and V** - Scales the noise texture in radial mapping
+* **Center Distortion Amount** - The Amount of distortion noise texture will generate
+* **Center Distortion Random Rotation** - Adds a random rotation for each particle noise texture
 
 
 ### DissolveParticleGroundWaveOffset_v2:
