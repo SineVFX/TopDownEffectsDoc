@@ -31,6 +31,7 @@ First of all, you need to unpack the right packages for your specific Unity setu
 * Most of the effects are driven by Particle Systems utilizing ([Custom Vertex Streams](https://docs.unity3d.com/Manual/PartSysVertexStreams.html)). You can freely scale the whole effect, it will preserve the proportions. Only one single parameter needed to be adjusted, it is "Soft Particles Distance" in materials with a "DissolveParticleAdvances" shader.
 
 Changes in version 2.0 {: .label .label-yellow }
+
 * **In version 2.0**, there are some effects that are not 100% scaled automatically. These effects will have the "AutoScaleMaster" script attached to a prefab. This script will handle the scaling process adjustments after you scale the entire prefab. If you want to scale prefab in the editor and it will not be scaled during gameplay, you can click the button "Auto Adjust Scaling and Rate", and it will work properly.
 * **In version 2.0**, you now have the tools to adjust the emission power of multiple materials. Check the Tools/SineVFX/MaterialFinalPowerBatchEditor dropdown.
 * **In version 2.0**, you have new DemoScene_GridEffects_v2. These effects use a modified shader intended for use in mesh material slots.
