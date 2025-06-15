@@ -15,7 +15,8 @@ Materials have a lot of settings, just play with them and create your own unique
 * You can scale, rotate, and transform the prefab like you normally do.
 * When you scale one of these effects (StormBeacon, SummonStorm, IonMarker, FusionCore), you might also need to adjust the "Soft Particles Distance" parameter of smoke and clouds-like materials. For example, if you scale your model by 0.01, you need to multiply this parameter by the same amount. By default, it is set to 0.2f, and the result value should be 0.002f, but this depends on camera depth, sometimes you need to adjust it by eye.
 
-Changes in version 2.0 {: .label .label-yellow }
+Changes in version 2.0
+{: .label .label-yellow }
 * **In version 2.0**, some of the new effects are not 100% scaled automatically. These effects will have the "AutoScaleMaster" script attached to a prefab. This script will handle the scaling process adjustments after you scale the entire prefab. If you want to scale prefab in the editor and it will not be scaled during gameplay, you can click the button "Auto Adjust Scaling and Rate", and it will work properly.
 
 ![s20](/assets/images/Screenshot_20.png)
@@ -24,7 +25,8 @@ Changes in version 2.0 {: .label .label-yellow }
 
 * **(Color)** Color is set in the material settings, but it is affected by particle color too. You can use a single color or a ramp texture. When using ramp gradient texture to color your particles, check the "Ramp Ignore Vertex(Particle) Color" parameter if you want to multiply the result by particle color. There is a "RampGeneratorTDE" script, you can attach it to the effects and generate ramp in runtime, or you can bake it as a texture (keep all ramp textures in Clamp mode).
 
-Changes in version 2.0 {: .label .label-yellow }
+Changes in version 2.0
+{: .label .label-yellow }
 * **In version 2.0**, you now have the tools to adjust the emission power of multiple materials. Check the Tools/SineVFX/MaterialFinalPowerBatchEditor dropdown.
 
 ![s21](/assets/images/Screenshot_21.png)
